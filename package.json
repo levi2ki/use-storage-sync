@@ -11,8 +11,21 @@
     "build:es6": "tsc -p tsconfig.es6.json",
     "build": "npm run build:commonjs && npm run build:es6"
   },
-  "author": "",
-  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/levi2ki/use-storage-sync.git"
+  },
+  "author": "Andrei Makarov <levi2ki1988@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/levi2ki/use-storage-sync/issues"
+  },
+  "homepage": "https://github.com/levi2ki/use-storage-sync",
+  "tags": [
+    "react",
+    "hooks",
+    "local-storage"
+  ],
   "devDependencies": {
     "@types/react": "^18.3.3",
     "react": "^18.3.1",

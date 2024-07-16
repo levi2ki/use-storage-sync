@@ -1,0 +1,39 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "noEmit": true,
+
+    "rootDir": "./src",
+    "sourceMap": false,
+    "declaration": true,
+    "removeComments": true,
+    "target": "es6",
+    "moduleResolution": "node",
+
+    "lib": ["es2017", "dom", "esnext", "esnext.asynciterable"],
+
+    "isolatedModules": true,
+    "jsx": "react-jsx",
+    "allowJs": false,
+
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "esModuleInterop": true,
+    "importHelpers": true,
+    "skipLibCheck": true,
+    "skipDefaultLibCheck": true,
+    "strict": true,
+    "allowSyntheticDefaultImports": true,
+    "forceConsistentCasingInFileNames": true,
+    "noFallthroughCasesInSwitch": true,
+    "resolveJsonModule": true,
+    "noImplicitAny": true,
+    "noImplicitReturns": true,
+    "noImplicitOverride": true,
+    "noUncheckedIndexedAccess": true,
+    "strictPropertyInitialization": false,
+    "strictNullChecks": true
+  },
+  "include": ["src"],
+  "exclude": ["**/node_modules", "**/.*/"]
+}

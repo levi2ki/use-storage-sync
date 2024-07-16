@@ -8,6 +8,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 0",
     "clean": "rimraf ./dist",
+    "prepare": "husky install",
     "build:commonjs": "tsc -p tsconfig.commonjs.json",
     "build:es6": "tsc -p tsconfig.es6.json",
     "build": "npm run build:commonjs && npm run build:es6"
@@ -33,6 +34,7 @@
   ],
   "devDependencies": {
     "@types/react": "^18.3.3",
+    "husky": "^8.0.3",
     "react": "^18.3.1",
     "typescript": "^4.9.5"
   },

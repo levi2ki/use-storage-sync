@@ -56,3 +56,5 @@ src
 tsconfig.json
 tsconfig.es6.json
 tsconfig.commonjs.json
+.github
+commitlint.config.js

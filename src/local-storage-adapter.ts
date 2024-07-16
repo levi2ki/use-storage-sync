@@ -1,4 +1,12 @@
-import type { ILocalStorageAdapter, ISetEventPayload } from "./types";
+type TUnsubscribe = () => void;
+
+export interface ILocalStorageAdapter {
+    setState: (nextState: string) => void;
+    subscribe: (notifyListener: () => void) => TUnsubscribe;
+    getSnapshot: () => unknown;
+}
+
+export interface ISetEventPayload extends Pick<StorageEvent, 'key' | 'storageArea' | 'oldValue' | 'newValue' | 'url'> {}
 
 // module augmentation event payloads
 declare global {

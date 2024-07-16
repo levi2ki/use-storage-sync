@@ -1,8 +1,19 @@
 import { useDebugValue, useMemo, useSyncExternalStore, useCallback } from 'react';
 
 import { LocalStorageAdapter } from './local-storage-adapter';
-import type { ISerializer, TUseSyncLocalStorageReturnType } from './types';
 
+export interface ISerializer {
+    parse(value: string): unknown;
+    stringify(value: unknown): string;
+}
+
+export type TUseSyncLocalStorageReturnType<T> = [
+    state: T | null,
+    methods: {
+        set: (nextState: T) => void;
+        remove: () => void;
+    },
+];
 
 
 /**

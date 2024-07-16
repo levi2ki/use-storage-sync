@@ -1,3 +1,4 @@
 export { useSyncLocalStorage } from './use-sync-local-storage';
-export type { ILocalStorageAdapter, ISetEventPayload, ISerializer, TUseSyncLocalStorageReturnType} from './types';
+export type { ISerializer, TUseSyncLocalStorageReturnType } from './use-sync-local-storage';
 export { LocalStorageAdapter } from './local-storage-adapter';
+export type { ILocalStorageAdapter, ISetEventPayload } from './local-storage-adapter';
